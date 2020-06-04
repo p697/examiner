@@ -56,7 +56,7 @@ C:\Users\你的用户名\AppData\Roaming\examiner\config.json
 
 #### finishKey结构
 
-```json
+```
 {
     key: '',  // 已经完成验证的密钥
     checkTime: '',  // 验证时间
