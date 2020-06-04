@@ -1,0 +1,27 @@
+
+.menubox {
+  height: 100%;
+  // width: fit-content;
+  border-right: 1px solid #f0f0f0;
+  // background-color: red;
+
+  &-trigger {
+    position: absolute;
+    bottom: 24px;
+    width: 40px;
+    text-align: center;
+    left: 20px;
+    &-bottomicon {
+      color: #aaa;
+      font-size: 28px;
+    }
+    &-bottomicon:hover {
+      color: #1890ff;
+    }
+  }
+  
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border-right: 0;
+}

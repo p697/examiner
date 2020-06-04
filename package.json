@@ -1,0 +1,50 @@
+{
+  "name": "examiner",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/data-set": "^0.11.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.1.4",
+    "electron": "^8.2.3",
+    "electron-store": "^5.1.1",
+    "fs": "0.0.1-security",
+    "md5-node": "^1.0.1",
+    "node-sass": "^4.13.1",
+    "node-uuid": "^1.4.8",
+    "node-xlsx": "^0.15.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-syntax-highlighter": "^12.2.1",
+    "scss": "^0.2.4"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-start": "electron ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

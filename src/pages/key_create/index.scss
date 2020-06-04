@@ -1,0 +1,56 @@
+.keycreate {
+  height: 100%;
+  // width: 192px;
+  padding-top: 1%;
+  margin: 0;
+  // background-color: red;
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    width: 90%;
+    // background-color: red;
+    margin: auto;
+  
+    &-left {
+      width: 44%;
+      height: 100%;
+      padding-top: 50px;
+      // background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  
+      &-number {
+        // background-color: green;
+        display: flex;
+        width :160px;
+        &-lable {
+          padding-top: 4px;
+          text-align: center;
+        }
+      }
+  
+      &-button {
+        // background-color: red;
+        margin-top: 20px;
+        width: 160px;
+      }
+    }
+  
+    &-right {
+      width: 56%;
+      height: 100%;
+      // background-color: blue;
+      overflow: auto;
+    }
+  
+  }
+}
+
+
+
+
