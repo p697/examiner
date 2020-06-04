@@ -16,7 +16,12 @@ export default () => {
   const store = new Store();
 
   const clickCheck = () => {
-    let res = checkSingle(key)
+    let res = checkSingle({
+      key: key,
+      name: '单独验证',
+      submitTime: '0',
+      sysId: '0'
+    })
     if (res.status) {
       message.success('密钥存在，消耗成功', 1.5)
     } else {

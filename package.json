@@ -2,13 +2,14 @@
   "name": "examiner",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@antv/data-set": "^0.11.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.1.4",
-    "electron": "^8.2.3",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-store": "^5.1.1",
     "fs": "0.0.1-security",
     "md5-node": "^1.0.1",
@@ -24,13 +25,20 @@
     "react-syntax-highlighter": "^12.2.1",
     "scss": "^0.2.4"
   },
+  "devDependencies": {
+    "electron": "^8.2.3",
+    "electron-builder": "^22.7.0",
+    "electron-winstaller": "^4.0.0"
+  },
   "main": "main.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-start": "electron ."
+    "electron-start": "electron .",
+    "builder": "electron-builder --win --ia32",
+    "package": "electron-packager . examiner --platform=win32 --arch=x64 --icon=./public/logo.ico --out=./out --asar --app-version=1.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +54,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "build": {
+    "appId": "com.examiner.app",
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://www.baidu.com/"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "./icon.ico"
+    }
   }
 }

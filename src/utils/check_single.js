@@ -2,7 +2,8 @@
 const Store = window.require('electron-store')
 const store = new Store();
 
-const checkSingle = (key) => {
+const checkSingle = (keyObj) => {
+  let { key, name, submitTime, sysId } = keyObj
   let freshKey = store.get('freshKey')
   let exist = freshKey.indexOf(key)
   if (exist !== -1) {
@@ -13,9 +14,9 @@ const checkSingle = (key) => {
       store.set('finishKey', finishKey.concat({
         key: key,
         checkTime: (new Date()).getTime(),
-        name: '单独验证',
-        submitTime: '0',
-        sysId: '0'
+        name: name,
+        submitTime: submitTime,
+        sysId: sysId
       }))  // 再更新finishKey数组
     } else {
       store.set('finishKey', [{

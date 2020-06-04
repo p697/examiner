@@ -105,7 +105,12 @@ export default () => {
   const check = (data, eleIndex) => {
     setCheckResult(
       data.map((row, index) => {
-        let code = checkSingle(row[eleIndex.keyIndex]).code
+        let code = checkSingle({
+          key: row[eleIndex.keyIndex],
+          name: row[eleIndex.nameIndex],
+          submitTime: row[eleIndex.submitTimeIndex],
+          sysId: row[eleIndex.sysIdIndex]
+        }).code
         return {
           number: index + 1,
           key: [code, row[eleIndex.keyIndex]],
@@ -129,11 +134,11 @@ export default () => {
 
 
   return (
-    <div className="checkexcel">
+    <div className="checkexcel" {...getRootProps()} >
       <div className="checkexcel-left">
         <div className="checkexcel-left-drapbox" onClick={() => clickUpload()} >
           <UploadOutlined className="checkexcel-left-drapbox-icon" />
-          <div className="checkexcel-left-drapbox-lable" {...getRootProps()}>
+          <div className="checkexcel-left-drapbox-lable">
             <p>点击此处上传</p>
             <p>或将文件拖拽到这里</p>
           </div>
