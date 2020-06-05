@@ -68,6 +68,7 @@ export default () => {
         let keyObj = finishKey.filter(ko => {
           return ko.key === key
         })[0]
+        console.log(keyObj)
         return keyObj.name + ',' + keyObj.sysId + ',' + keyObj.submitTime + ',' + keyObj.checkTime + ',' + keyObj.key + '\n'
       }).forEach(row => data += row)
       // 导出excel

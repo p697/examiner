@@ -38,7 +38,7 @@
     "eject": "react-scripts eject",
     "electron-start": "electron .",
     "builder": "electron-builder --win --ia32",
-    "package": "electron-packager . examiner --platform=win32 --arch=x64 --icon=./public/logo.ico --out=./out --asar --app-version=1.0.0"
+    "package": "electron-packager . 霸都密码 --platform=win32 --arch=x64 --icon=./public/logo.ico --out=./out --asar --app-version=1.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -10,6 +10,8 @@ export default (finishKey) => {
       key: keyObj.key,
       name: name,
       checkTime: timestap_to_time(keyObj.checkTime, 'Y-m-d H:i:s'),
+      sysId: keyObj.sysId,
+      submitTime: keyObj.submitTime,
       description: '系统ID：' + keyObj.sysId + '; 问卷提交时间：' + keyObj.submitTime
     }
   })

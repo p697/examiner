@@ -32,6 +32,16 @@ npm run electron-start
 }
 ```
 
+#### 代码更新注意
+
+怕我以后忘了，趁热记录一下。
+
+在进行代码的修改之前，先修改main.js的loadUrl方式为3000端口（开发模式）
+
+之后npm start，npm run electron-start，开始开发。
+
+代码修改完毕后，先yarn build，再去main.js将loadUrl改回生产模式，最后检查一下package.json中的build-package中的配置，ok的话就package吧。
+
 
 
 
