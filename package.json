@@ -13,7 +13,7 @@
     "electron-store": "^5.1.1",
     "fs": "0.0.1-security",
     "md5-node": "^1.0.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "node-uuid": "^1.4.8",
     "node-xlsx": "^0.15.0",
     "react": "^16.13.1",
